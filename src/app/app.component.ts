@@ -22,8 +22,9 @@ export class AppComponent implements OnInit {
 
     // this.dataServ.getRange().subscribe(number => console.log(number))
 
-    this.dataServ.getCounter().subscribe(count => console.log(count));
+    // this.dataServ.getCounter().subscribe(count => console.log(count));
     
+    this.dataServ.getSeaLevelData().subscribe(data => console.log(data));
   }
 
   incrementCounter():void{
